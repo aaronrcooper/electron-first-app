@@ -1,16 +1,21 @@
+import { FileService } from './file.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { FileComponent } from './file/file.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FileComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
-  providers: [],
+  providers: [
+    FileService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
